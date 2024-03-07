@@ -122,3 +122,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# internal deck-related
+
+*_files
+strong-presentation
+df.csv
+
+
+# vs-code
+*-workspace
