@@ -65,7 +65,7 @@ class TimedComparison:
                 return (
                     self.df
                     .groupby(['grp', 'grp_3'], as_index=False, sort=False)
-                    .agg({'x': 'mean', 'y': 'sum'})
+                    .agg({'x': 'mean', 'y': 'sum'}) # really ought to do namedAgg here for consistent output
                 )
         elif pkg == 'polars':
             if with_lambda:
